@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header" id="header">
+            <a href="index.html" class="logo" id="logo"></a>
+            <a href="search.html" class="search"></a>
+        </div>
+        <div class="main-bg fixed" id="main-bg"></div>
+        <div class="menu fixed" id="menu">
+            <div class="menu-line" id="menu-line">
+                <span class="" id="menu-l1"></span>
+                <span class="" id="menu-l2"></span>
+                <span class="" id="menu-l3"></span>
+            </div>
+            <div class="menu-text" id="menu-text">菜单</div>
+        </div>
+        <!--导航-->
+        <div class="nav fixed" id="nav">
+            <a href="" class="nav-list">
+                <span class="nav-icon"><img src="image/machine.png"></span>
+                <span class="nav-text">机械系列</span>
+                <span class="nav-line"></span>
+            </a>
+            <a href="" class="nav-list">
+                <span class="nav-icon"><img src="image/quartz.png"></span>
+                <span class="nav-text">石英系列</span>
+                <span class="nav-line"></span>
+            </a>
+            <a href="" class="nav-list">
+                <span class="nav-icon"><img src="image/sport.png"></span>
+                <span class="nav-text">运动系列</span>
+                <span class="nav-line"></span>
+            </a>
+            <a href="" class="nav-list">
+                <span class="nav-icon"><img src="image/couple.png"></span>
+                <span class="nav-text">情侣系列</span>
+                <span class="nav-line"></span>
+            </a>
+        </div>
+        <!--内容-->
+        <div class="search-cont">
+            <div class="search-cont-bg"></div>
+            <div class="search-form">
+                <div class="search-nav">
+                    <a href="index.html">首页</a>
+                    <span>></span>
+                    <span class="list-thisWeb">搜索</span>
+                </div>
+                <form action="" class="search-action">
+                    <p class="search-form-title">搜索</p>
+                    <input type="text" id="search-input" value="系列、名称......">
+                    <div class="search-submit"><span></span></div>
+                </form>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="sFooter oh">
+            <div class="sFooter-l fl"><a href="">使用条款</a><a href="">隐私政策</a></div>
+            <div class="sFooter-r fr">版权为西尔雷亚所有，转载必究。 粤ICP备09615073号-18</div>
+        </div>
+    </div>
+    <script src="js/rem.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var sInput=document.getElementById('search-input');
+        sInput.onclick=function(){
+            if(this.value=='系列、名称......'){
+                this.value='';
+            }
+        }
+        sInput.onblur=function(){
+            if(this.value==''){
+                this.value='系列、名称......';
+            }
+        }
+    </script>
+</body>
+</html>
