@@ -105,6 +105,9 @@
     .detail-h-t-w>div{
         width: 90%;
     }
+    .detail-history-text{
+        font-size: .16rem;
+    }
     .search-action{
         width: 90%;
     }
